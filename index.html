@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glass Buddy - Privacy Policy</title>
+    <title>Wysdom Solutions - Privacy Policies</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
@@ -13,74 +13,76 @@
             padding: 0 20px;
             color: #333;
         }
-        h1 { color: #007AFF; border-bottom: 2px solid #007AFF; padding-bottom: 10px; }
-        h2 { color: #555; margin-top: 30px; }
-        .last-updated { color: #888; font-size: 0.9em; }
-        .contact { background: #f5f5f5; padding: 15px; border-radius: 8px; margin-top: 30px; }
+        h1 { 
+            color: #007AFF; 
+            border-bottom: 2px solid #007AFF; 
+            padding-bottom: 10px; 
+        }
+        h2 { 
+            color: #555; 
+            margin-top: 30px; 
+        }
+        .app-list {
+            list-style: none;
+            padding: 0;
+        }
+        .app-item {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #007AFF;
+        }
+        .app-item h3 {
+            margin-top: 0;
+            color: #007AFF;
+        }
+        .app-item a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .app-item a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #888;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Glass Buddy Privacy Policy</h1>
-    <p class="last-updated"><strong>Last Updated:</strong> December 1, 2025</p>
+    <h1>Wysdom Solutions Privacy Policies</h1>
+    
+    <p>Wysdom Solutions LLC develops mobile applications with a privacy-first approach. Select your app below to view its privacy policy.</p>
 
-    <h2>Overview</h2>
-    <p>Glass Buddy is committed to protecting your privacy. This app is designed with privacy in mind - we collect minimal data and store everything locally on your device.</p>
-
-    <h2>Data Collection</h2>
-    <p>Glass Buddy <strong>does not collect, store, or transmit any personal data</strong>. All data (glass colors, projects, kiln programs, firing logs) is stored locally on your device using SQLite database.</p>
-
-    <h2>Photo Library Access</h2>
-    <p>The app requests photo library permission (iOS/Android only) to save exported comparison images and kiln program schedules in PNG or PDF format. This permission is:</p>
-    <ul>
-        <li><strong>Optional:</strong> You can use the app without granting this permission</li>
-        <li><strong>Add-only:</strong> The app only saves files you explicitly export</li>
-        <li><strong>User-initiated:</strong> Only used when you tap "Export as Image" or "Export as PDF"</li>
+    <h2>Our Applications</h2>
+    
+    <ul class="app-list">
+        <li class="app-item">
+            <h3>Glass Buddy</h3>
+            <p>Mobile companion for glass artists. Search glass colors, check compatibility, manage projects, and adjust kiln firing schedules.</p>
+            <a href="/glass-buddy/">View Privacy Policy →</a>
+        </li>
+        
+        <!-- Future apps will be added here -->
+        <!-- Example:
+        <li class="app-item">
+            <h3>Future App Name</h3>
+            <p>App description here.</p>
+            <a href="/future-app/">View Privacy Policy →</a>
+        </li>
+        -->
     </ul>
 
-    <h2>Crash Reporting</h2>
-    <p>Glass Buddy uses <a href="https://sentry.io">Sentry</a>, a third-party crash reporting service, to improve app stability. When the app crashes, Sentry collects:</p>
-    <ul>
-        <li>Error type and stack trace (technical error information)</li>
-        <li>Device type and operating system version</li>
-        <li>App version number</li>
-        <li>Actions leading up to the crash (e.g., "User tapped Projects tab")</li>
-    </ul>
-    <p><strong>What is NOT collected:</strong> Your name, email, location, or any personal information. Crash reports are anonymous and used solely to identify and fix bugs.</p>
-
-    <h2>Data Storage</h2>
-    <p>All app data is stored locally on your device in:</p>
-    <ul>
-        <li><strong>SQLite database:</strong> Glass colors, projects, kiln programs, firing logs</li>
-        <li><strong>AsyncStorage:</strong> User preferences (filters, temperature unit, onboarding flags)</li>
-    </ul>
-    <p>This data is <strong>never transmitted to external servers</strong>. The app works completely offline.</p>
-
-    <h2>Data Deletion</h2>
-    <p>Uninstalling Glass Buddy from your device permanently removes all local data including:</p>
-    <ul>
-        <li>Custom projects and firing logs you created</li>
-        <li>Saved filter preferences</li>
-        <li>All app settings</li>
-    </ul>
-    <p>There is no account or cloud backup - uninstalling means complete data removal.</p>
-
-    <h2>Third-Party Services</h2>
-    <p>Glass Buddy uses the following third-party service:</p>
-    <ul>
-        <li><strong>Sentry</strong> (sentry.io) - Crash reporting and error tracking. See Sentry's privacy policy at <a href="https://sentry.io/privacy/">sentry.io/privacy</a></li>
-    </ul>
-
-    <h2>Children's Privacy</h2>
-    <p>Glass Buddy does not knowingly collect any information from children under 13. The app is designed for adult glass artists and hobbyists.</p>
-
-    <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy from time to time. Changes will be posted at this URL with an updated "Last Updated" date. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-
-    <div class="contact">
-        <h2>Contact Us</h2>
-        <p>Questions about this privacy policy or Glass Buddy?</p>
-        <p><strong>Email:</strong> glassbuddy@wysdomsolutions.com</p>
-        <p><strong>Developer:</strong> Wysdom Solutions LLC</p>
+    <div class="footer">
+        <p><strong>Wysdom Solutions LLC</strong></p>
+        <p>For questions about privacy, contact: <a href="mailto:privacy@wysdomsolutions.com">privacy@wysdomsolutions.com</a></p>
     </div>
 </body>
 </html>
